@@ -25,9 +25,12 @@ In `orgVfinal/Game/AI.java`, you can adjust the `depth` variable, which controls
 - A higher value improves the AI's strategic capabilities.  
 - However, it also increases the computational time required for the AI to make decisions.  
 
-## AI: MinMax Algorithm  
-The AI uses the MinMax algorithm, a common approach for strategic games. This algorithm simulates decisions from two opposing agents:  
+## AI: MinMax Algorithm with Alpha-Beta Pruning  
+The AI uses the MinMax algorithm, a standard approach for strategic games, optimized with **Alpha-Beta pruning** to reduce the number of nodes explored during the decision-making process.  
+
+### Key Concepts:  
 - **Min** – Represents the opponent, aiming to minimize the AI's chances of success.  
 - **Max** – Represents the AI, always choosing the most advantageous move.  
+- **Alpha-Beta Pruning** – Optimizes MinMax by skipping unnecessary branches that cannot affect the final decision, significantly reducing computation time.  
 
-The AI explores all possible outcomes up to the specified `depth`, simulating the opponent's choices to ensure it selects the best possible move.  
+The AI explores all possible outcomes up to the specified `depth`, simulating the opponent's choices to ensure it selects the best possible move efficiently.  

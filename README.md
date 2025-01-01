@@ -1,4 +1,4 @@
-# Connect 4 with MinMax AI  
+# Connect 4 with MinMax AI
 
 This project implements a basic, functional version of Connect 4, featuring an AI powered by the MinMax algorithm.  
 
@@ -34,3 +34,5 @@ The AI uses the MinMax algorithm, a standard approach for strategic games, optim
 - **Alpha-Beta Pruning** – Optimizes MinMax by skipping unnecessary branches that cannot affect the final decision, significantly reducing computation time.  
 
 The AI explores all possible outcomes up to the specified `depth`, simulating the opponent's choices to ensure it selects the best possible move efficiently.  
+
+Test 

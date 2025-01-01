@@ -14,14 +14,14 @@ Repeat this process for both players to set up the game.
 
 ## Configurable Parameters  
 ### Board Size  
-In `orgVfinal/Game/Board.java`, you can modify the following instance variables:  
+In `org/Game/Board.java`, you can modify the following instance variables:  
 - `rows` – Adjusts the number of rows in the game board.  
 - `column` – Adjusts the number of columns in the game board.  
 
 > **Note**: Increasing the number of columns will increase the computational time required by the AI.  
 
 ### AI Depth  
-In `orgVfinal/Game/AI.java`, you can adjust the `depth` variable, which controls the AI's search depth:  
+In `org/Game/AI.java`, you can adjust the `depth` variable, which controls the AI's search depth:  
 - A higher value improves the AI's strategic capabilities.  
 - However, it also increases the computational time required for the AI to make decisions.  
 
@@ -34,5 +34,3 @@ The AI uses the MinMax algorithm, a standard approach for strategic games, optim
 - **Alpha-Beta Pruning** – Optimizes MinMax by skipping unnecessary branches that cannot affect the final decision, significantly reducing computation time.  
 
 The AI explores all possible outcomes up to the specified `depth`, simulating the opponent's choices to ensure it selects the best possible move efficiently.  
-
-Test 

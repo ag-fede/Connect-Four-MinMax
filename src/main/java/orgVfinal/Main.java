@@ -13,7 +13,6 @@ public class Main {
     public static Board board = new Board();
     public static Player player1;
     public static Player player2;
-    public static int difficulty;
 
     public static void main(String[] args) {
         player1 = choosePlayer(1);
@@ -49,15 +48,14 @@ public class Main {
         System.out.println("Choose player " + color + " type: 1 for human, 2 for AI");
         byte playerType = scanner.nextByte();
 
-        switch (playerType) {
-            case 1:
-                return new Player((byte) color);
-            case 2:
-                return new AI((byte) color);
-            default:
+        return switch (playerType) {
+            case 1 -> new Player((byte) color);
+            case 2 -> new AI((byte) color);
+            default -> {
                 System.out.println("Invalid option, try again");
-                return choosePlayer(color);
-        }
+                yield choosePlayer(color);
+            }
+        };
     }
 
     public static boolean turno(Player player){

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AI extends Player {
-    Player opponent;
+    private Player opponent;
     private final int depth = 6;
     public AI(byte color) {
         super(color);
